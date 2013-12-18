@@ -21,6 +21,28 @@ Features:
 * Ability to suspend a license.
 * Ability to add an expiration for a license (perfect for 30 day trials).
 
+= How to use =
+
+To validate a license you will use the HTTP/HTTPS API. Make a call to 
+`
+http://youwebsite.com/icense-validation/license-key-here
+`
+
+The return of the API will present JSON object containing information about the license.
+
+If the license is valid, the response will look like below
+`
+{"isValid": true}
+`
+
+If the license is invalid, expired or suspended the following response will be presented
+
+`
+{"isValid":false,"message":"Message-why-the-license-failed"}
+`
+
+Full documentation is comming soon. The plugin will be updated with links shortly when the documentation is finished. Until then you can contact, justin@justin-greer.com questions or concerns.
+
 == Installation ==
 
 This section describes how to install the plugin and get it working.
@@ -47,6 +69,26 @@ The above function will create a license for "Justin Greer" and the product "Tes
 = Does the plugin send notification emails when a license is created? =
 
 Short answer, No. The plugin is meant to be bare bones so you can integrate seamlessly how you need it. With this said, I do plan on added email notifications in future releases.
+
+= How do I validate a license in my products =
+
+To validate a license you will use the HTTP/HTTPS API. Make a call to 
+`
+http://youwebsite.com/icense-validation/license-key-here
+`
+
+The return of the API will present JSON object containing information about the license.
+
+If the license is valid the response will look like below
+`
+{"isValid": true}
+`
+
+If the license is invalid, expired or suspended the following response will be presented
+
+`
+{"isValid":false,"message":"Message-why-the-license-failed"}
+`
 
 == Screenshots ==
 
