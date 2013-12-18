@@ -25,7 +25,7 @@ Features:
 
 To validate a license you will use the HTTP/HTTPS API. Make a call to 
 `
-http://youwebsite.com/icense-validation/license-key-here
+http://yourwebsite.com/license-validation/license-key-here
 `
 
 The return of the API will present JSON object containing information about the license.
