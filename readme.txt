@@ -4,7 +4,7 @@ Donate link: http://justin-greer.com/
 Tags: license, license distribution
 Requires at least: 3.8
 Tested up to: 3.8
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Allows your WordPress website to manage, distribute and validate licenses for yo
 
 == Description ==
 
-This plugin is allows you to manage, distribute and validate licenses for your software and programs that your sell or simple just require a license for. This plugin is super easy to use and comes with a simple API that allows you to create a license on the fly using one simple function. 
+This plugin allows you to manage, distribute and validate licenses for your software and programs that your sell or simple just require a license for. This plugin is super easy to use and comes with a simple API that allows you to create a license on the fly using one simple function. 
 
 Features:
 
@@ -25,7 +25,7 @@ Features:
 
 To validate a license you will use the HTTP/HTTPS API. Make a call to 
 `
-http://youwebsite.com/icense-validation/license-key-here
+http://yourwebsite.com/license-validation/license-key-here
 `
 
 The return of the API will present JSON object containing information about the license.
@@ -41,7 +41,7 @@ If the license is invalid, expired or suspended the following response will be p
 {"isValid":false,"message":"Message-why-the-license-failed"}
 `
 
-Full documentation is comming soon. The plugin will be updated with links shortly when the documentation is finished. Until then you can contact, justin@justin-greer.com questions or concerns.
+Full documentation is coming soon. The plugin will be updated with links shortly when the documentation is finished. Until then you can contact, justin@justin-greer.com questions or concerns.
 
 == Installation ==
 
@@ -98,6 +98,9 @@ If the license is invalid, expired or suspended the following response will be p
 
 = 1.0.0 =
 * Initial Build
+
+= 1.0.1 =
+* Patch for header issue when calling API
 
 == Upgrade Notice ==
 

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: License Distribution
  * Plugin URI: http://justin-greer.com
- * Version: 1.0.0
+ * Version: 1.0.1
  * Description: Gives the functionality to distribute , manage and validate licenses for your software and programs.
  * Author: <a href="http://justin-greer.com" target="_blank">Justin Greer Interactive, LLC</a>
  * Author URI: http://justin-greer.com

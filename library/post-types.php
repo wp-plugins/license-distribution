@@ -12,9 +12,6 @@
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
 */
-if( !defined( 'ABSPATH' ) ){ header("HTTP/1.0 404 Not Found"); exit; }
-
-add_action( 'init', 'create_license_distribution_post_type' );
 function create_license_distribution_post_type() {
   $labels = array(
     'name'               => 'Licenses',
@@ -49,7 +46,9 @@ function create_license_distribution_post_type() {
 
   register_post_type( 'license_distribution', $args );
 }
+add_action( 'init', 'create_license_distribution_post_type' );
 
+// Remove permalink for license_distribution
 add_action('admin_init', 'license_distribution_remove_permalink');
 function license_distribution_remove_permalink() {
     if(isset($_GET['post'])) {
