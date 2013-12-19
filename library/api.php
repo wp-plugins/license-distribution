@@ -74,7 +74,7 @@ function license_validation_plublic_api() {
         }
 
         // Header Content Type
-        // header('Content-type: application/json');
+        header('Content-type: application/json');
         print json_encode( $output );
         exit;
     }
