@@ -74,7 +74,7 @@ Short answer, No. The plugin is meant to be bare bones so you can integrate seam
 
 To validate a license you will use the HTTP/HTTPS API. Make a call to 
 `
-http://youwebsite.com/icense-validation/license-key-here
+http://youwebsite.com/license-validation/license-key-here
 `
 
 The return of the API will present JSON object containing information about the license.
